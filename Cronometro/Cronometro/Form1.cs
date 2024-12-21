@@ -2,12 +2,12 @@ namespace Cronometro
 {
     public partial class Form1 : Form
     {
-        private readonly Cronometro _cronometro; //atributo privado apenas de leitura que vai ser instanciado na class form
+        private readonly CronometroF _cronometro; //atributo privado apenas de leitura que vai ser instanciado na class form
 
         public Form1()
         {
             InitializeComponent();
-            _cronometro = new Cronometro(); // é necessario no construtor instanciar o cronometro para poder comecar a usa-lo
+            _cronometro = new CronometroF(); // é necessario no construtor instanciar o cronometro para poder comecar a usa-lo
         }
 
         private void ButtonOnOff_Click(object sender, EventArgs e) //metodo para ligar e desligar o butao do cronometro

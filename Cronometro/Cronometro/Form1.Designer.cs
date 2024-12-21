@@ -57,6 +57,7 @@
             // 
             // TimerRelogio
             // 
+            TimerRelogio.Interval = 60;
             TimerRelogio.Tick += TimerRelogio_Tick;
             // 
             // Form1

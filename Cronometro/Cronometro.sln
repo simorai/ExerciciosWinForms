@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35506.116 d17.12
+VisualStudioVersion = 17.12.35506.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cronometro", "Cronometro\Cronometro.csproj", "{7DFDCA17-C22C-4646-A648-7489937D4893}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CronometroConsola", "CronometroConsola\CronometroConsola.csproj", "{51588D2C-3995-411A-814C-75160D383424}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7DFDCA17-C22C-4646-A648-7489937D4893}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DFDCA17-C22C-4646-A648-7489937D4893}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DFDCA17-C22C-4646-A648-7489937D4893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51588D2C-3995-411A-814C-75160D383424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51588D2C-3995-411A-814C-75160D383424}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51588D2C-3995-411A-814C-75160D383424}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51588D2C-3995-411A-814C-75160D383424}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

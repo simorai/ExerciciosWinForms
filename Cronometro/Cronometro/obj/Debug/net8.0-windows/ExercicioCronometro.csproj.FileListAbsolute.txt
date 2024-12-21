@@ -1,0 +1,17 @@
+C:\Projetos\cronometro\Cronometro\Cronometro\bin\Debug\net8.0-windows\ExercicioCronometro.exe
+C:\Projetos\cronometro\Cronometro\Cronometro\bin\Debug\net8.0-windows\ExercicioCronometro.deps.json
+C:\Projetos\cronometro\Cronometro\Cronometro\bin\Debug\net8.0-windows\ExercicioCronometro.runtimeconfig.json
+C:\Projetos\cronometro\Cronometro\Cronometro\bin\Debug\net8.0-windows\ExercicioCronometro.dll
+C:\Projetos\cronometro\Cronometro\Cronometro\bin\Debug\net8.0-windows\ExercicioCronometro.pdb
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\Cronometro.Form1.resources
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\ExercicioCronometro.csproj.GenerateResource.cache
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\ExercicioCronometro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\ExercicioCronometro.AssemblyInfoInputs.cache
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\ExercicioCronometro.AssemblyInfo.cs
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\ExercicioCronometro.csproj.CoreCompileInputs.cache
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\ExercicioCronometro.sourcelink.json
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\ExercicioCronometro.dll
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\refint\ExercicioCronometro.dll
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\ExercicioCronometro.pdb
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\ExercicioCronometro.genruntimeconfig.cache
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\ref\ExercicioCronometro.dll

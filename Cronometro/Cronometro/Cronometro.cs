@@ -1,6 +1,6 @@
 ﻿namespace Cronometro
 {
-    public class Cronometro
+    public class CronometroF
     {
         #region Atributos
 

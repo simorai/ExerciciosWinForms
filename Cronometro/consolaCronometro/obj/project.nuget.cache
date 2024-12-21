@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "n4yua0S54Tc=",
+  "success": false,
+  "projectFilePath": "C:\\Projetos\\cronometro\\Cronometro\\consolaCronometro\\consolaCronometro.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Cronometro is not compatible with net8.0 (.NETCoreApp,Version=v8.0). Project Cronometro supports: net8.0-windows7.0 (.NETCoreApp,Version=v8.0)",
+      "libraryId": "Cronometro",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}
