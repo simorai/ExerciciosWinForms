@@ -38,11 +38,9 @@
             return _isrunning;
         }
 
-        public DateTime StarTime() // retorna o valor de inicio
+        public DateTime StartTime() // retorna o valor de inicio
         {
             return _start;
         }
-
-
     }
 }

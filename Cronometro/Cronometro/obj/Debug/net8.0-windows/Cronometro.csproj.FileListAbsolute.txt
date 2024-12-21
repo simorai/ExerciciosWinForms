@@ -1,0 +1,17 @@
+C:\Projetos\cronometro\Cronometro\Cronometro\bin\Debug\net8.0-windows\Cronometro.exe
+C:\Projetos\cronometro\Cronometro\Cronometro\bin\Debug\net8.0-windows\Cronometro.deps.json
+C:\Projetos\cronometro\Cronometro\Cronometro\bin\Debug\net8.0-windows\Cronometro.runtimeconfig.json
+C:\Projetos\cronometro\Cronometro\Cronometro\bin\Debug\net8.0-windows\Cronometro.dll
+C:\Projetos\cronometro\Cronometro\Cronometro\bin\Debug\net8.0-windows\Cronometro.pdb
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\Cronometro.Form1.resources
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\Cronometro.csproj.GenerateResource.cache
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\Cronometro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\Cronometro.AssemblyInfoInputs.cache
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\Cronometro.AssemblyInfo.cs
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\Cronometro.csproj.CoreCompileInputs.cache
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\Cronometro.sourcelink.json
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\Cronometro.dll
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\refint\Cronometro.dll
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\Cronometro.pdb
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\Cronometro.genruntimeconfig.cache
+C:\Projetos\cronometro\Cronometro\Cronometro\obj\Debug\net8.0-windows\ref\Cronometro.dll

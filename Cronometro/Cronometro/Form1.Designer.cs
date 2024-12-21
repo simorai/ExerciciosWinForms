@@ -28,12 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            components = new System.ComponentModel.Container();
+            ButtonOnOff = new Button();
+            LabelContador = new Label();
+            TimerRelogio = new System.Windows.Forms.Timer(components);
+            SuspendLayout();
+            // 
+            // ButtonOnOff
+            // 
+            ButtonOnOff.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ButtonOnOff.Location = new Point(629, 342);
+            ButtonOnOff.Name = "ButtonOnOff";
+            ButtonOnOff.Size = new Size(132, 84);
+            ButtonOnOff.TabIndex = 0;
+            ButtonOnOff.Text = "Ligar";
+            ButtonOnOff.UseVisualStyleBackColor = true;
+            ButtonOnOff.Click += ButtonOnOff_Click;
+            // 
+            // LabelContador
+            // 
+            LabelContador.AutoSize = true;
+            LabelContador.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LabelContador.Location = new Point(273, 176);
+            LabelContador.Name = "LabelContador";
+            LabelContador.Size = new Size(104, 31);
+            LabelContador.TabIndex = 1;
+            LabelContador.Text = "00:00:00";
+            // 
+            // TimerRelogio
+            // 
+            TimerRelogio.Tick += TimerRelogio_Tick;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(LabelContador);
+            Controls.Add(ButtonOnOff);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button ButtonOnOff;
+        private Label LabelContador;
+        private System.Windows.Forms.Timer TimerRelogio;
     }
 }
