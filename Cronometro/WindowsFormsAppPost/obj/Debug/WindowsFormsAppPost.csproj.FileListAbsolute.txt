@@ -1,0 +1,10 @@
+C:\Projetos\cronometro\Cronometro\WindowsFormsAppPost\bin\Debug\WindowsFormsAppPost.exe.config
+C:\Projetos\cronometro\Cronometro\WindowsFormsAppPost\bin\Debug\WindowsFormsAppPost.exe
+C:\Projetos\cronometro\Cronometro\WindowsFormsAppPost\bin\Debug\WindowsFormsAppPost.pdb
+C:\Projetos\cronometro\Cronometro\WindowsFormsAppPost\obj\Debug\WindowsFormsAppPost.csproj.AssemblyReference.cache
+C:\Projetos\cronometro\Cronometro\WindowsFormsAppPost\obj\Debug\WindowsFormsAppPost.Form1.resources
+C:\Projetos\cronometro\Cronometro\WindowsFormsAppPost\obj\Debug\WindowsFormsAppPost.Properties.Resources.resources
+C:\Projetos\cronometro\Cronometro\WindowsFormsAppPost\obj\Debug\WindowsFormsAppPost.csproj.GenerateResource.cache
+C:\Projetos\cronometro\Cronometro\WindowsFormsAppPost\obj\Debug\WindowsFormsAppPost.csproj.CoreCompileInputs.cache
+C:\Projetos\cronometro\Cronometro\WindowsFormsAppPost\obj\Debug\WindowsFormsAppPost.exe
+C:\Projetos\cronometro\Cronometro\WindowsFormsAppPost\obj\Debug\WindowsFormsAppPost.pdb

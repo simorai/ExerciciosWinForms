@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cronometro", "Cronometro\Cr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CronometroConsola", "CronometroConsola\CronometroConsola.csproj", "{51588D2C-3995-411A-814C-75160D383424}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppPost", "WindowsFormsAppPost\WindowsFormsAppPost.csproj", "{F0403324-52DC-4A4F-9866-4334C6746B18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppBalao", "WindowsFormsAppBalao\WindowsFormsAppBalao.csproj", "{2371AA44-3EAA-49B5-AC58-0FD35C4C30BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{51588D2C-3995-411A-814C-75160D383424}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51588D2C-3995-411A-814C-75160D383424}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51588D2C-3995-411A-814C-75160D383424}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0403324-52DC-4A4F-9866-4334C6746B18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0403324-52DC-4A4F-9866-4334C6746B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0403324-52DC-4A4F-9866-4334C6746B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0403324-52DC-4A4F-9866-4334C6746B18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2371AA44-3EAA-49B5-AC58-0FD35C4C30BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2371AA44-3EAA-49B5-AC58-0FD35C4C30BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2371AA44-3EAA-49B5-AC58-0FD35C4C30BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2371AA44-3EAA-49B5-AC58-0FD35C4C30BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

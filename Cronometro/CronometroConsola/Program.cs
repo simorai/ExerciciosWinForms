@@ -17,7 +17,6 @@ namespace CronometroConsola
             {
                 var tempo = DateTime.Now - relogio.StartTime();
                 Console.Write("\r Tempo Corrente: {0}", tempo);
-
                 if (Console.KeyAvailable)
                 {
                     if (Console.ReadKey().Key == ConsoleKey.Enter)
