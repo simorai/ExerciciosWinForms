@@ -7,16 +7,37 @@ namespace WindowsFormsAppBalao
     /// </summary>
     public class Balao
     {
-        #region Propriedades
+        #region Atributos
 
         private string _cor;
         private string _direcao;
         private int _altura;
 
+        #endregion Atributos
+
+        #region Propriedades
+
+        public string Cor
+        {
+            get {  return _cor; }
+            set { _cor = value; }
+        }
+
+        public string Direcao
+        {
+            get { return _direcao; }
+            set { _direcao = value; }
+        }
+
+        public int Altura
+        {
+            get { return _altura; }
+            set { _altura = value; }
+        }
+
         #endregion Propriedades
 
-        #region Metodos
-
+        #region Construtores
 
         /// <summary>
         /// Inicializa uma nova instância da classe Balao.
@@ -35,23 +56,9 @@ namespace WindowsFormsAppBalao
             _altura = Math.Max(0, alturaInicial); // Garante que a altura seja maior ou igual a zero
         }
 
-        /// <summary>
-        /// Obtém a cor atual do balão.
-        /// </summary>
-        /// <returns>
-        /// Uma string representando a cor atual do balão.
-        /// Os valores possíveis incluem "vermelho", "azul", "verde", 
-        /// ou qualquer outro valor que tenha sido definido para a cor do balão.
-        /// </returns>
-        /// <remarks>
-        /// Este método retorna diretamente o valor da variável privada _cor.
-        /// A cor retornada será a última cor definida através do método SetCor,
-        /// ou a cor inicial definida na criação do objeto Balao.
-        /// </remarks>
-        public string GetColor()
-        {
-            return _cor;
-        }
+        #endregion Construtores
+
+        #region Metodos
 
         /// <summary>
         /// Define uma nova cor para o balão.
@@ -74,6 +81,7 @@ namespace WindowsFormsAppBalao
             }
             return false;
         }
+
         /// <summary>
         /// Obtém o nome do recurso de imagem correspondente à cor atual do balão.
         /// </summary>
@@ -217,9 +225,9 @@ namespace WindowsFormsAppBalao
         /// </remarks>
         public string GetEstado()
         {
-            return $"Cor: {_cor}\nDireção: {_direcao}\nAltura: {_altura} metros";
+            return $"Cor: {Cor}\nDireção: {Direcao}\nAltura: {Altura} metros";
         }
 
-        #endregion
+        #endregion Metodos
     }
 }

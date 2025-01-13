@@ -9,6 +9,8 @@
         private bool _isrunning; //indica se esta ligado ou desligado
 
         #endregion
+
+        #region Metodos
         /// <summary>
         /// Inicia o cronômetro.
         /// </summary>
@@ -103,5 +105,7 @@
         {
             return _start;
         }
+
+        #endregion Metodos
     }
 }

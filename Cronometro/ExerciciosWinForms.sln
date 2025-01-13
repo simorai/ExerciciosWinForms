@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppPost", "Wind
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppBalao", "WindowsFormsAppBalao\WindowsFormsAppBalao.csproj", "{2371AA44-3EAA-49B5-AC58-0FD35C4C30BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormFone", "WindowsFormFone\WindowsFormFone.csproj", "{64D0E832-2599-4341-96D4-26F4A1155165}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsAppFormulaOne", "WinFormsAppFormulaOne\WinFormsAppFormulaOne.csproj", "{C96DA826-15A7-42C4-8BAD-95CA7206796F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{2371AA44-3EAA-49B5-AC58-0FD35C4C30BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2371AA44-3EAA-49B5-AC58-0FD35C4C30BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2371AA44-3EAA-49B5-AC58-0FD35C4C30BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64D0E832-2599-4341-96D4-26F4A1155165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64D0E832-2599-4341-96D4-26F4A1155165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64D0E832-2599-4341-96D4-26F4A1155165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64D0E832-2599-4341-96D4-26F4A1155165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C96DA826-15A7-42C4-8BAD-95CA7206796F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C96DA826-15A7-42C4-8BAD-95CA7206796F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C96DA826-15A7-42C4-8BAD-95CA7206796F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C96DA826-15A7-42C4-8BAD-95CA7206796F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -50,7 +50,7 @@
             // btnSubir
             // 
             this.btnSubir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubir.Location = new System.Drawing.Point(744, 407);
+            this.btnSubir.Location = new System.Drawing.Point(744, 372);
             this.btnSubir.Name = "btnSubir";
             this.btnSubir.Size = new System.Drawing.Size(80, 29);
             this.btnSubir.TabIndex = 9;
@@ -61,7 +61,7 @@
             // btnDescer
             // 
             this.btnDescer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDescer.Location = new System.Drawing.Point(744, 442);
+            this.btnDescer.Location = new System.Drawing.Point(744, 407);
             this.btnDescer.Name = "btnDescer";
             this.btnDescer.Size = new System.Drawing.Size(80, 30);
             this.btnDescer.TabIndex = 10;
@@ -101,7 +101,7 @@
             // picChao
             // 
             this.picChao.Image = global::WindowsFormsAppBalao.Properties.Resources.Sem_título;
-            this.picChao.Location = new System.Drawing.Point(-14, 508);
+            this.picChao.Location = new System.Drawing.Point(-10, 518);
             this.picChao.Name = "picChao";
             this.picChao.Size = new System.Drawing.Size(1022, 71);
             this.picChao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -111,7 +111,7 @@
             // picBalao
             // 
             this.picBalao.Image = global::WindowsFormsAppBalao.Properties.Resources.balao_vermelho;
-            this.picBalao.Location = new System.Drawing.Point(495, 397);
+            this.picBalao.Location = new System.Drawing.Point(419, 418);
             this.picBalao.Name = "picBalao";
             this.picBalao.Size = new System.Drawing.Size(101, 105);
             this.picBalao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -151,7 +151,7 @@
             // btnDireita
             // 
             this.btnDireita.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDireita.Location = new System.Drawing.Point(830, 426);
+            this.btnDireita.Location = new System.Drawing.Point(830, 408);
             this.btnDireita.Name = "btnDireita";
             this.btnDireita.Size = new System.Drawing.Size(93, 29);
             this.btnDireita.TabIndex = 16;
@@ -162,7 +162,7 @@
             // btnEsquerda
             // 
             this.btnEsquerda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEsquerda.Location = new System.Drawing.Point(637, 426);
+            this.btnEsquerda.Location = new System.Drawing.Point(637, 406);
             this.btnEsquerda.Name = "btnEsquerda";
             this.btnEsquerda.Size = new System.Drawing.Size(101, 31);
             this.btnEsquerda.TabIndex = 17;
@@ -175,7 +175,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(983, 564);
+            this.ClientSize = new System.Drawing.Size(1008, 575);
             this.Controls.Add(this.btnEsquerda);
             this.Controls.Add(this.btnDireita);
             this.Controls.Add(this.btnMudarCor);

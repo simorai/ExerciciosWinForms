@@ -62,6 +62,7 @@ namespace WindowsFormsAppBalao
             // Valor fixo para subir
             int valorSubir = 10;
 
+
             // Calcula a nova posição Y (vertical) do balão.
             // picBalao.Location.Y para obter a posição Y atual do balão.
             // Subtrai valorSubir da posição Y atual para determinar a nova posição.
@@ -74,8 +75,8 @@ namespace WindowsFormsAppBalao
 
             // Chama o método Subir do objeto meuBalao para atualizar sua altura interna
             meuBalao.Subir(valorSubir);
-            
-            AtualizarEstadoBalao();            
+
+            AtualizarEstadoBalao();
         }
 
         /// <summary>
@@ -101,6 +102,10 @@ namespace WindowsFormsAppBalao
         {
             // Define um valor constante de 10 unidades para descer o balão
             int valorDescer = 10;
+
+            // Chama o método Descer do objeto meuBalao para atualizar sua altura interna
+            meuBalao.Descer(valorDescer);
+
             // Calcula a nova posição Y (vertical) do balão.
             // Usa picBalao.Location.Y para obter a posição Y atual do balão.
             // Usa Math.Min para garantir que o balão não ultrapasse o chão (picChao.Top), subtraindo a altura do balão (picBalao.Height) para que ele pare no topo do chão.
@@ -111,9 +116,6 @@ namespace WindowsFormsAppBalao
             // Usa a nova posição Y calculada(novaPosicaoY).
             picBalao.Location = new Point(picBalao.Location.X, novaPosicaoY);
 
-            // Chama o método Descer do objeto meuBalao para atualizar sua altura interna
-            meuBalao.Descer(valorDescer);
-            
             // Atualiza a exibição do estado do balão no formulário
             AtualizarEstadoBalao();
         }
@@ -293,5 +295,7 @@ namespace WindowsFormsAppBalao
                 btnEsquerda.PerformClick();
             }
         }
+
+
     }
 }
