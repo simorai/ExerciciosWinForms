@@ -28,10 +28,8 @@ namespace WindowsFormsAppPost
         /// </summary>
         private int _naoGostos;
 
-        #endregion
-
-        #region Properties
-
+        #endregion Atributes
+                
         /// <summary>
         /// Cria um novo post com o título e descrição fornecidos.
         /// </summary>
@@ -62,7 +60,9 @@ namespace WindowsFormsAppPost
             _gostos = 0;
             _naoGostos = 0;
         }
+        
 
+        #region Methods
         /// <summary>
         /// Incrementa o contador de gostos do post.
         /// </summary>
@@ -117,6 +117,6 @@ namespace WindowsFormsAppPost
         {
             return _naoGostos;
         }
-        #endregion
+        #endregion Methods
     }
 }

@@ -5,6 +5,8 @@ namespace WinFormsAppFormulaOne
         public Form1()
         {
             InitializeComponent();
+            carro = new Carro();
         }
+        private Carro carro = new Carro();
     }
 }

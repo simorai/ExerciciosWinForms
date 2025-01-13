@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WinFormsAppFormulaOne")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df0769effb5945c8622557f3234e2172f33c536e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77b09c272aae5a525524ffd5d7924081b66d2b17")]
 [assembly: System.Reflection.AssemblyProductAttribute("WinFormsAppFormulaOne")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WinFormsAppFormulaOne")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

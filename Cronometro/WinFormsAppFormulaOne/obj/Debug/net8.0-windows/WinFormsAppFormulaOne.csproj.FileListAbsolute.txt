@@ -1,0 +1,17 @@
+C:\Projetos\cronometro\Cronometro\WinFormsAppFormulaOne\bin\Debug\net8.0-windows\WinFormsAppFormulaOne.exe
+C:\Projetos\cronometro\Cronometro\WinFormsAppFormulaOne\bin\Debug\net8.0-windows\WinFormsAppFormulaOne.deps.json
+C:\Projetos\cronometro\Cronometro\WinFormsAppFormulaOne\bin\Debug\net8.0-windows\WinFormsAppFormulaOne.runtimeconfig.json
+C:\Projetos\cronometro\Cronometro\WinFormsAppFormulaOne\bin\Debug\net8.0-windows\WinFormsAppFormulaOne.dll
+C:\Projetos\cronometro\Cronometro\WinFormsAppFormulaOne\bin\Debug\net8.0-windows\WinFormsAppFormulaOne.pdb
+C:\Projetos\cronometro\Cronometro\WinFormsAppFormulaOne\obj\Debug\net8.0-windows\WinFormsAppFormulaOne.Form1.resources
+C:\Projetos\cronometro\Cronometro\WinFormsAppFormulaOne\obj\Debug\net8.0-windows\WinFormsAppFormulaOne.csproj.GenerateResource.cache
+C:\Projetos\cronometro\Cronometro\WinFormsAppFormulaOne\obj\Debug\net8.0-windows\WinFormsAppFormulaOne.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\cronometro\Cronometro\WinFormsAppFormulaOne\obj\Debug\net8.0-windows\WinFormsAppFormulaOne.AssemblyInfoInputs.cache
+C:\Projetos\cronometro\Cronometro\WinFormsAppFormulaOne\obj\Debug\net8.0-windows\WinFormsAppFormulaOne.AssemblyInfo.cs
+C:\Projetos\cronometro\Cronometro\WinFormsAppFormulaOne\obj\Debug\net8.0-windows\WinFormsAppFormulaOne.csproj.CoreCompileInputs.cache
+C:\Projetos\cronometro\Cronometro\WinFormsAppFormulaOne\obj\Debug\net8.0-windows\WinFormsAppFormulaOne.sourcelink.json
+C:\Projetos\cronometro\Cronometro\WinFormsAppFormulaOne\obj\Debug\net8.0-windows\WinFormsAppFormulaOne.dll
+C:\Projetos\cronometro\Cronometro\WinFormsAppFormulaOne\obj\Debug\net8.0-windows\refint\WinFormsAppFormulaOne.dll
+C:\Projetos\cronometro\Cronometro\WinFormsAppFormulaOne\obj\Debug\net8.0-windows\WinFormsAppFormulaOne.pdb
+C:\Projetos\cronometro\Cronometro\WinFormsAppFormulaOne\obj\Debug\net8.0-windows\WinFormsAppFormulaOne.genruntimeconfig.cache
+C:\Projetos\cronometro\Cronometro\WinFormsAppFormulaOne\obj\Debug\net8.0-windows\ref\WinFormsAppFormulaOne.dll

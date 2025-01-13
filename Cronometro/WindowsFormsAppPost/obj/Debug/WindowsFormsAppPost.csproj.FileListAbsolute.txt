@@ -8,3 +8,4 @@ C:\Projetos\cronometro\Cronometro\WindowsFormsAppPost\obj\Debug\WindowsFormsAppP
 C:\Projetos\cronometro\Cronometro\WindowsFormsAppPost\obj\Debug\WindowsFormsAppPost.csproj.CoreCompileInputs.cache
 C:\Projetos\cronometro\Cronometro\WindowsFormsAppPost\obj\Debug\WindowsFormsAppPost.exe
 C:\Projetos\cronometro\Cronometro\WindowsFormsAppPost\obj\Debug\WindowsFormsAppPost.pdb
+C:\Projetos\cronometro\Cronometro\WindowsFormsAppPost\obj\Debug\WindowsFormsAppPost.NovoFormPost.resources
