@@ -53,7 +53,7 @@
             // 
             this.lblTitulo.Enabled = false;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(526, 86);
+            this.lblTitulo.Location = new System.Drawing.Point(516, 86);
             this.lblTitulo.Multiline = true;
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(225, 45);
@@ -63,7 +63,7 @@
             // 
             this.lblDescricao.Enabled = false;
             this.lblDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricao.Location = new System.Drawing.Point(526, 176);
+            this.lblDescricao.Location = new System.Drawing.Point(516, 176);
             this.lblDescricao.Multiline = true;
             this.lblDescricao.Name = "lblDescricao";
             this.lblDescricao.ReadOnly = true;
@@ -73,7 +73,7 @@
             // lblData
             // 
             this.lblData.AutoSize = true;
-            this.lblData.Location = new System.Drawing.Point(523, 296);
+            this.lblData.Location = new System.Drawing.Point(513, 296);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(36, 16);
             this.lblData.TabIndex = 14;
@@ -83,7 +83,7 @@
             // 
             this.lblNaoGostos.AutoSize = true;
             this.lblNaoGostos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNaoGostos.Location = new System.Drawing.Point(672, 339);
+            this.lblNaoGostos.Location = new System.Drawing.Point(634, 339);
             this.lblNaoGostos.Name = "lblNaoGostos";
             this.lblNaoGostos.Size = new System.Drawing.Size(108, 20);
             this.lblNaoGostos.TabIndex = 18;
@@ -93,7 +93,7 @@
             // 
             this.lblGostos.AutoSize = true;
             this.lblGostos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGostos.Location = new System.Drawing.Point(522, 339);
+            this.lblGostos.Location = new System.Drawing.Point(512, 339);
             this.lblGostos.Name = "lblGostos";
             this.lblGostos.Size = new System.Drawing.Size(69, 20);
             this.lblGostos.TabIndex = 17;
@@ -102,7 +102,7 @@
             // btnNaoGostar
             // 
             this.btnNaoGostar.Enabled = false;
-            this.btnNaoGostar.Location = new System.Drawing.Point(676, 373);
+            this.btnNaoGostar.Location = new System.Drawing.Point(666, 373);
             this.btnNaoGostar.Name = "btnNaoGostar";
             this.btnNaoGostar.Size = new System.Drawing.Size(75, 65);
             this.btnNaoGostar.TabIndex = 16;
@@ -113,7 +113,7 @@
             // btnGostar
             // 
             this.btnGostar.Enabled = false;
-            this.btnGostar.Location = new System.Drawing.Point(526, 373);
+            this.btnGostar.Location = new System.Drawing.Point(516, 373);
             this.btnGostar.Name = "btnGostar";
             this.btnGostar.Size = new System.Drawing.Size(75, 65);
             this.btnGostar.TabIndex = 15;
@@ -176,7 +176,7 @@
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(813, 33);
             this.menuStrip1.TabIndex = 24;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -191,7 +191,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(125, 30);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -206,7 +206,7 @@
             // aboutToolStripMenuItem1
             // 
             this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(224, 30);
+            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(148, 30);
             this.aboutToolStripMenuItem1.Text = "&About";
             this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
             // 
@@ -225,7 +225,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(813, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.btnSubmeter);

@@ -38,11 +38,11 @@ namespace WindowsFormsAppPost
         /// </remarks>
         private void AtualizarExibicao()
         {
-            lblTitulo.Text = post.GetTitulo();
-            lblDescricao.Text = post.GetDescricao();
-            lblData.Text = $"Data: {post.GetData()}";
-            lblGostos.Text = $"Gostos: {post.GetGostos()}";
-            lblNaoGostos.Text = $"Não Gostos: {post.GetNaoGostos()}";
+            lblTitulo.Text = post.Titulo;
+            lblDescricao.Text = post.Descricao;
+            lblData.Text = $"Data: {post.Data:dd/MM/yyyy HH:mm:ss}";
+            lblGostos.Text = $"Gostos: {post.Gostos}";
+            lblNaoGostos.Text = $"Não Gostos: {post.NaoGostos}";
         }
 
         /// <summary>
@@ -139,6 +139,15 @@ namespace WindowsFormsAppPost
             Close();
         }
 
+        /// <summary>
+        /// Manipula o evento de clique no item de menu "About" (Sobre).
+        /// </summary>
+        /// <param name="sender">O objeto que disparou o evento.</param>
+        /// <param name="e">Os argumentos do evento.</param>
+        /// <remarks>
+        /// Este método é chamado quando o usuário clica no item de menu "About" (Sobre).
+        /// Ele exibe uma caixa de mensagem simples com informações sobre a versão do aplicativo.
+        /// </remarks>
         private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Post Version 1.0");

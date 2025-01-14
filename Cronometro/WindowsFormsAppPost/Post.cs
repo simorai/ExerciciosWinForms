@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 namespace WindowsFormsAppPost
 {
     public class Post
@@ -8,28 +7,55 @@ namespace WindowsFormsAppPost
         #region Atributes
 
         /// <summary>
-        /// O título do post.
+        /// Armazena o título do post.
         /// </summary>
+        /// <remarks>
+        /// Este campo é privado para manter o encapsulamento.
+        /// O acesso e a modificação deste campo devem ser feitos através da propriedade pública 'Titulo'.
+        /// O título não deve ser nulo ou consistir apenas de espaços em branco.
+        /// </remarks>
         private string _titulo;
         /// <summary>
-        /// A descrição detalhada do post.
+        /// Armazena a descrição detalhada do post.
         /// </summary>
+        /// <remarks>
+        /// Este campo é privado para manter o encapsulamento.
+        /// O acesso e a modificação deste campo devem ser feitos através da propriedade pública 'Descricao'.
+        /// A descrição não deve ser nula ou consistir apenas de espaços em branco.
+        /// </remarks>
         private string _descricao;
         /// <summary>
-        /// A data e hora de criação do post.
+        /// Armazena a data e hora de criação do post.
         /// </summary>
+        /// <remarks>
+        /// Este campo é privado para manter o encapsulamento.
+        /// O acesso a este campo deve ser feito através da propriedade pública 'Data'.
+        /// Normalmente, este valor é definido no momento da criação do post e não deve ser alterado posteriormente.
+        /// </remarks>
         private DateTime _data;
         /// <summary>
-        /// O número de "gostos" que o post recebeu.
+        /// Armazena o número de "gostos" que o post recebeu.
         /// </summary>
+        /// <remarks>
+        /// Este campo é privado para manter o encapsulamento.
+        /// O acesso e a modificação deste campo devem ser feitos através da propriedade pública 'Gostos'
+        /// ou do método 'Gostar()'.
+        /// Este valor deve sempre ser não-negativo.
+        /// </remarks>
         private int _gostos;
         /// <summary>
-        /// O número de "não gostos" que o post recebeu.
+        /// Armazena o número de "não gostos" que o post recebeu.
         /// </summary>
+        /// <remarks>
+        /// Este campo é privado para manter o encapsulamento.
+        /// O acesso e a modificação deste campo devem ser feitos através da propriedade pública 'NaoGostos'
+        /// ou do método 'NaoGostar()'.
+        /// Este valor deve sempre ser não-negativo.
+        /// </remarks>
         private int _naoGostos;
 
         #endregion Atributes
-                
+
         /// <summary>
         /// Cria um novo post com o título e descrição fornecidos.
         /// </summary>
@@ -54,69 +80,125 @@ namespace WindowsFormsAppPost
                 throw new ArgumentException("Título e descrição não podem ser vazios.");
             }
 
-            _titulo = titulo;
-            _descricao = descricao;
+            Titulo = titulo;
+            Descricao = descricao;
             _data = DateTime.Now;
-            _gostos = 0;
-            _naoGostos = 0;
+            Gostos = 0;
+            NaoGostos = 0;
         }
-        
 
-        #region Methods
+        #region Properties
         /// <summary>
-        /// Incrementa o contador de gostos do post.
+        /// Obtém ou define o título do post.
         /// </summary>
+        /// <value>
+        /// O título do post. Não pode ser nulo ou consistir apenas de espaços em branco.
+        /// </value>
+        /// <remarks>
+        /// O setter é privado para garantir que o título só possa ser modificado internamente pela classe.
+        /// </remarks>
+        public string Titulo
+        {
+            get { return _titulo; }
+            private set { _titulo = value; }
+        }
+
+        /// <summary>
+        /// Obtém ou define a descrição detalhada do post.
+        /// </summary>
+        /// <value>
+        /// A descrição do post. Não pode ser nula ou consistir apenas de espaços em branco.
+        /// </value>
+        /// <remarks>
+        /// O setter é privado para garantir que a descrição só possa ser modificada internamente pela classe.
+        /// </remarks>
+        public string Descricao
+        {
+            get { return _descricao; }
+            private set { _descricao = value; }
+        }
+
+        /// <summary>
+        /// Obtém a data e hora de criação do post.
+        /// </summary>
+        /// <value>
+        /// Um objeto <see cref="DateTime"/> representando o momento exato em que o post foi criado.
+        /// </value>
+        /// <remarks>
+        /// Esta propriedade é somente leitura para garantir a integridade da data de criação do post.
+        /// O valor é definido internamente no momento da criação do post e não pode ser alterado posteriormente.
+        /// </remarks>
+        /// <example>
+        /// Exemplo de uso:
+        /// <code>
+        /// Post meuPost = new Post();
+        /// Console.WriteLine($"O post foi criado em: {meuPost.Data}");
+        /// </code>
+        /// </example>
+        /// <seealso cref="DateTime"/>
+        public DateTime Data
+        {
+            get { return _data; }            
+        }
+
+        /// <summary>
+        /// Obtém ou define o número de "gostos" que o post recebeu.
+        /// </summary>
+        /// <value>
+        /// Um inteiro não negativo representando o número de gostos.
+        /// </value>
+        /// <remarks>
+        /// O setter é privado para garantir que o número de gostos só possa ser modificado internamente pela classe,
+        /// tipicamente através de métodos específicos como 'Gostar()'.
+        /// </remarks>
+        public int Gostos
+        {
+            get { return _gostos; }
+            private set { _gostos = value; }
+        }
+
+        /// <summary>
+        /// Obtém ou define o número de "não gostos" que o post recebeu.
+        /// </summary>
+        /// <value>
+        /// Um inteiro não negativo representando o número de não gostos.
+        /// </value>
+        /// <remarks>
+        /// O setter é privado para garantir que o número de não gostos só possa ser modificado internamente pela classe,
+        /// tipicamente através de métodos específicos como 'NaoGostar()'.
+        /// </remarks>
+        public int NaoGostos
+        {
+            get { return _naoGostos; }
+            private set { _naoGostos = value; }
+        }
+
+        #endregion Properties
+
+        /// <summary>
+        /// Incrementa o contador de "gostos" do post.
+        /// </summary>
+        /// <remarks>
+        /// Este método aumenta em 1 o número de "gostos" do post cada vez que é chamado.
+        /// É a forma recomendada de registrar um novo "gosto" para o post, mantendo
+        /// o encapsulamento e a integridade dos dados.
+        /// </remarks>
         public void Gostar()
         {
-            _gostos++;
+            Gostos++;
         }
+
         /// <summary>
-        /// Incrementa o contador de não gostos do post.
+        /// Incrementa o contador de "não gostos" do post.
         /// </summary>
+        /// <remarks>
+        /// Este método aumenta em 1 o número de "não gostos" do post cada vez que é chamado.
+        /// É a forma recomendada de registrar um novo "não gosto" para o post, mantendo
+        /// o encapsulamento e a integridade dos dados.
+        /// </remarks>
         public void NaoGostar()
         {
-            _naoGostos++;
+            NaoGostos++;
         }
-        /// <summary>
-        /// Obtém o título do post.
-        /// </summary>
-        /// <returns>O título do post.</returns>
-        public string GetTitulo()
-        {
-            return _titulo;
-        }
-        /// <summary>
-        /// Obtém a descrição do post.
-        /// </summary>
-        /// <returns>A descrição do post.</returns>
-        public string GetDescricao()
-        {
-            return _descricao;
-        }
-        /// <summary>
-        /// Obtém a data de criação do post.
-        /// </summary>
-        /// <returns>A data de criação do post.</returns>
-        public DateTime GetData()
-        {
-            return _data;
-        }
-        /// <summary>
-        /// Obtém o número de gostos do post.
-        /// </summary>
-        /// <returns>O número de gostos.</returns>
-        public int GetGostos()
-        {
-            return _gostos;
-        }
-        /// <summary>
-        /// Obtém o número de não gostos do post.
-        /// </summary>
-        /// <returns>O número de não gostos.</returns>
-        public int GetNaoGostos()
-        {
-            return _naoGostos;
-        }
-        #endregion Methods
     }
 }

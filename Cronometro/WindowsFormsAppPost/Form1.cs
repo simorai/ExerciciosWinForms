@@ -33,20 +33,8 @@ namespace WindowsFormsAppPost
         /// </remarks>
         public Form1()
         {
-            InitializeComponent();
-            post = new Post(); // Instancia a classe Post
+            InitializeComponent();            
         }
-
-        //----------------
-        /// <summary>
-        /// Representa o post atual sendo manipulado pela aplicação.
-        /// </summary>
-        /// <remarks>
-        /// Este campo é inicializado com uma nova instância da classe Post.
-        /// É utilizado para armazenar e gerenciar os dados do post atual,
-        /// incluindo título, descrição, data, gostos e não gostos.
-        /// </remarks>
-        private Post post = new Post();
 
         /// <summary>
         /// Metodo que encerra o programa
@@ -68,6 +56,15 @@ namespace WindowsFormsAppPost
             MessageBox.Show("Post Version 1.0");
         }
 
+        /// <summary>
+        /// Manipula o evento de clique no botão "Criar Post".
+        /// </summary>
+        /// <param name="sender">O objeto que disparou o evento.</param>
+        /// <param name="e">Os argumentos do evento.</param>
+        /// <remarks>
+        /// Este método é chamado quando o usuário clica no botão para criar um novo post.
+        /// Ele cria e exibe uma nova instância do formulário NovoFormPost.
+        /// </remarks>
         private void btnCriarPost_Click(object sender, EventArgs e)
         {
             NovoFormPost novoFormPost = new NovoFormPost();
