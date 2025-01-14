@@ -116,56 +116,6 @@ namespace WindowsFormsAppBalao
         }
 
         /// <summary>
-        /// Obtém a direção atual do balão.
-        /// </summary>
-        /// <returns>
-        /// Uma string representando a direção atual do balão.
-        /// Os valores possíveis podem incluir "Norte", "Sul", "Leste", "Oeste",
-        /// ou qualquer outra direção que tenha sido definida para o balão.
-        /// </returns>
-        /// <remarks>
-        /// Este método retorna diretamente o valor da variável privada _direcao.
-        /// A direção retornada será a última direção definida para o balão,
-        /// seja através do construtor ou de qualquer método que altere a direção.
-        /// </remarks>
-        public string GetDirecao()
-        {
-            return Direcao;
-        }
-
-        /// <summary>
-        /// Define uma nova direção para o balão.
-        /// </summary>
-        /// <param name="novaDirecao">A nova direção a ser atribuída ao balão. 
-        /// Pode ser qualquer string, tipicamente "Norte", "Sul", "Leste", "Oeste", etc.</param>
-        /// <remarks>
-        /// Este método atualiza diretamente a direção do balão com o valor fornecido.
-        /// Não há validação da entrada, então qualquer string pode ser definida como direção.
-        /// É responsabilidade do chamador garantir que uma direção válida seja fornecida.
-        /// </remarks>
-        public void SetDirecao(string novaDirecao)
-        {
-            Direcao = novaDirecao;
-        }
-
-        /// <summary>
-        /// Obtém a altura atual do balão.
-        /// </summary>
-        /// <returns>
-        /// Um valor inteiro representando a altura atual do balão em metros.
-        /// Este valor é sempre não-negativo.
-        /// </returns>
-        /// <remarks>
-        /// Este método retorna diretamente o valor da variável privada _altura.
-        /// A altura retornada representa a distância vertical do balão em relação ao solo.
-        /// O valor mínimo possível é zero, indicando que o balão está no nível do solo.
-        /// </remarks>
-        public int GetAltura()
-        {
-            return Altura;
-        }
-
-        /// <summary>
         /// Aumenta a altura do balão em uma quantidade especificada, garantindo que não exceda a altura máxima permitida.
         /// </summary>
         /// <param name="metros">A quantidade de metros que o balão deve subir.</param>
@@ -182,7 +132,6 @@ namespace WindowsFormsAppBalao
             {
                 // Calcula a nova altura
                 int novaAltura = Altura + metros;
-
                 // Verifica se a nova altura excede a altura máxima
                 if (novaAltura > alturaMaxima)
                 {
