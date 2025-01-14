@@ -51,9 +51,9 @@ namespace WindowsFormsAppBalao
         /// </remarks>
         public Balao(string corInicial, string direcaoInicial, int alturaInicial)
         {
-            _cor = corInicial;
-            _direcao = direcaoInicial;
-            _altura = Math.Max(0, alturaInicial); // Garante que a altura seja maior ou igual a zero
+            Cor = corInicial;
+            Direcao = direcaoInicial;
+            Altura = Math.Max(0, alturaInicial); // Garante que a altura seja maior ou igual a zero
         }
 
         #endregion Construtores
@@ -76,7 +76,7 @@ namespace WindowsFormsAppBalao
             novaCor = novaCor.ToLower();
             if (novaCor == "vermelho" || novaCor == "azul" || novaCor == "verde")
             {
-                _cor = novaCor;
+                Cor = novaCor;
                 return true;
             }
             return false;
@@ -102,7 +102,7 @@ namespace WindowsFormsAppBalao
         /// </remarks>
         public string GetImagemRecurso()
         {
-            switch (_cor.ToLower())
+            switch (Cor.ToLower())
             {
                 case "vermelho":
                     return "balao_vermelho";
@@ -130,7 +130,7 @@ namespace WindowsFormsAppBalao
         /// </remarks>
         public string GetDirecao()
         {
-            return _direcao;
+            return Direcao;
         }
 
         /// <summary>
@@ -145,7 +145,7 @@ namespace WindowsFormsAppBalao
         /// </remarks>
         public void SetDirecao(string novaDirecao)
         {
-            _direcao = novaDirecao;
+            Direcao = novaDirecao;
         }
 
         /// <summary>
@@ -162,24 +162,37 @@ namespace WindowsFormsAppBalao
         /// </remarks>
         public int GetAltura()
         {
-            return _altura;
+            return Altura;
         }
 
         /// <summary>
-        /// Aumenta a altura do balão e atualiza sua direção para "Norte".
+        /// Aumenta a altura do balão em uma quantidade especificada, garantindo que não exceda a altura máxima permitida.
         /// </summary>
-        /// <param name="metros"></param>
+        /// <param name="metros">A quantidade de metros que o balão deve subir.</param>
+        /// <param name="alturaMaxima">A altura máxima que o balão pode atingir.</param>
         /// <remarks>
-        /// Este método só altera a altura e a direção do balão se o valor de metros for maior que zero.
-        /// A altura do balão é incrementada pelo valor especificado em metros.
-        /// A direção do balão é sempre definida como "Norte" quando ele sobe.
+        /// Este método verifica se a quantidade de metros a ser adicionada é positiva.
+        /// Se a nova altura calculada exceder a altura máxima, a altura do balão é ajustada
+        /// para a altura máxima. Caso contrário, a nova altura é definida normalmente.
+        /// A direção do balão é atualizada para "Norte".
         /// </remarks>
-        public void Subir(int metros)
+        public void Subir(int metros, int alturaMaxima)
         {
             if (metros > 0)
             {
-                _altura += metros;             
-                _direcao = "Norte";
+                // Calcula a nova altura
+                int novaAltura = Altura + metros;
+
+                // Verifica se a nova altura excede a altura máxima
+                if (novaAltura > alturaMaxima)
+                {
+                    Altura = alturaMaxima; // Ajusta para a altura máxima
+                }
+                else
+                {
+                    Altura = novaAltura; // Define a nova altura se não exceder
+                }                
+                Direcao = "Norte";
             }
         }
 
@@ -198,12 +211,12 @@ namespace WindowsFormsAppBalao
             {
                 // Calcula a nova altura do balão
                 // Math.Max garante que a altura não seja menor que zero
-                _altura = Math.Max(0, _altura - metros);
+                Altura = Math.Max(0, _altura - metros);
                 // Explicação detalhada:
                 // 1. _altura - metros: Subtrai o número de metros da altura atual
                 // 2. Math.Max(0, ...): Compara o resultado da subtração com zero
                 //    e retorna o maior valor, evitando alturas negativas
-                _direcao = "Sul";
+                Direcao = "Sul";
             }
             // Se metros <= 0, o método não faz nada, evitando movimentos inválidos
         }

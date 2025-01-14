@@ -31,6 +31,7 @@ namespace WindowsFormsAppBalao
             KeyPreview = true;
             // Adiciona o manipulador para o evento KeyDown
             KeyDown += Form1_KeyDown;
+            AtualizarEstadoBalao();
         }
 
         /// <summary>
@@ -43,26 +44,23 @@ namespace WindowsFormsAppBalao
         }
 
         /// <summary>
-        /// Manipula o evento de clique no botão "Subir", fazendo o balão subir na interface gráfica e atualizando seu estado interno.
+        /// Evento acionado quando o botão de subir é clicado.
+        /// Este método aumenta a altura do balão e atualiza sua posição visual no formulário.
         /// </summary>
-        /// <param name="sender">O objeto que disparou o evento, tipicamente o botão "Subir".</param>
-        /// <param name="e">Os argumentos do evento, que não são utilizados neste método.</param>
+        /// <param name="sender">O objeto que gerou o evento, geralmente o botão que foi clicado.</param>
+        /// <param name="e">Os argumentos do evento que contêm informações sobre o evento.</param>
         /// <remarks>
-        /// Este método realiza as seguintes ações:
-        /// <list type="bullet">
-        /// <item>Aumenta a altura visual do balão na interface gráfica em 10 unidades.</item>
-        /// <item>Garante que o balão não ultrapasse o topo da tela.</item>
-        /// <item>Atualiza a posição do balão na PictureBox.</item>
-        /// <item>Atualiza o estado interno do objeto balão, aumentando sua altura.</item>
-        /// <item>Atualiza a exibição do estado do balão no formulário.</item>
-        /// </list>
+        /// O método calcula a nova posição Y do balão, garantindo que ele não ultrapasse
+        /// os limites da janela. A altura máxima é determinada pela altura do formulário
+        /// menos a altura do balão e a altura do chão (picChao).
+        /// O balão é movido para cima na tela e sua altura interna é atualizada.
         /// </remarks>
         private void btnSubir_Click(object sender, EventArgs e)
         {
             // Valor fixo para subir
-            int valorSubir = 10;
-
-
+            int valorSubir = 5;
+            // Define a altura máxima considerando a altura do formulário e a altura do picChao
+            int alturaMaxima = this.ClientSize.Height - picBalao.Height - picChao.Height;
             // Calcula a nova posição Y (vertical) do balão.
             // picBalao.Location.Y para obter a posição Y atual do balão.
             // Subtrai valorSubir da posição Y atual para determinar a nova posição.
@@ -73,9 +71,7 @@ namespace WindowsFormsAppBalao
             // Usa a nova posição Y calculada (novaPosicaoY)
             picBalao.Location = new Point(picBalao.Location.X, novaPosicaoY);
 
-            // Chama o método Subir do objeto meuBalao para atualizar sua altura interna
-            meuBalao.Subir(valorSubir);
-
+            meuBalao.Subir(valorSubir, alturaMaxima);
             AtualizarEstadoBalao();
         }
 
@@ -193,32 +189,13 @@ namespace WindowsFormsAppBalao
         private void Form1_Load(object sender, EventArgs e)
         {
             // Posiciona o balão encostado no chão
-            picBalao.Location = new Point(
-            picBalao.Location.X, // Mantém a posição X atual do balão
-            picChao.Top - picBalao.Height // Calcula a posição Y para que o balão fique no topo do chão
-            );
+            picBalao.Location = new Point(picBalao.Location.X, picChao.Top - picBalao.Height);
+            // Mantém a posição X atual do balão
+            // Calcula a posição Y para que o balão fique no topo do chão
             // Este cálculo coloca a base do balão exatamente no topo do chão:
             // picChao.Top é a coordenada Y do topo do chão
             // picBalao.Height é a altura da imagem do balão
-            // Subtraindo a altura do balão da posição do chão, obtemos a posição Y correta
-
-            // Atualiza o estado inicial do balão na interface do usuário
-            AtualizarEstadoBalao();
-        }
-
-        /// <summary>
-        /// Manipula o evento de clique na label de estado, atualizando seu texto com as informações do balão.
-        /// </summary>
-        /// <param name="sender">O objeto que disparou o evento, tipicamente a label de estado.</param>
-        /// <param name="e">Os argumentos do evento, que não são utilizados neste método.</param>
-        /// <remarks>
-        /// Este método é chamado quando o usuário clica na label que exibe o estado do balão.
-        /// Ele atualiza o texto da label com a representação atual do estado do balão,
-        /// incluindo informações sobre a cor, direção e altura.
-        /// </remarks>
-        private void lblEstado_Click(object sender, EventArgs e)
-        {
-            lblEstado.Text = meuBalao.GetEstado();
+            // Subtraindo a altura do balão da posição do chão, obtemos a posição Y correta            
         }
 
         /// <summary>
@@ -295,7 +272,5 @@ namespace WindowsFormsAppBalao
                 btnEsquerda.PerformClick();
             }
         }
-
-
     }
 }

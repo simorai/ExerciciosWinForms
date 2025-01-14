@@ -50,7 +50,7 @@
             // btnSubir
             // 
             this.btnSubir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubir.Location = new System.Drawing.Point(744, 372);
+            this.btnSubir.Location = new System.Drawing.Point(775, 468);
             this.btnSubir.Name = "btnSubir";
             this.btnSubir.Size = new System.Drawing.Size(80, 29);
             this.btnSubir.TabIndex = 9;
@@ -61,7 +61,7 @@
             // btnDescer
             // 
             this.btnDescer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDescer.Location = new System.Drawing.Point(744, 407);
+            this.btnDescer.Location = new System.Drawing.Point(775, 506);
             this.btnDescer.Name = "btnDescer";
             this.btnDescer.Size = new System.Drawing.Size(80, 30);
             this.btnDescer.TabIndex = 10;
@@ -74,23 +74,22 @@
             this.lblEstado.AutoSize = true;
             this.lblEstado.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstado.Location = new System.Drawing.Point(415, 9);
+            this.lblEstado.Location = new System.Drawing.Point(843, 224);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(132, 20);
             this.lblEstado.TabIndex = 11;
             this.lblEstado.Text = "Estado do Balao";
-            this.lblEstado.Click += new System.EventHandler(this.lblEstado_Click);
             // 
             // txtCor
             // 
-            this.txtCor.Location = new System.Drawing.Point(871, 267);
+            this.txtCor.Location = new System.Drawing.Point(875, 421);
             this.txtCor.Name = "txtCor";
             this.txtCor.Size = new System.Drawing.Size(100, 22);
             this.txtCor.TabIndex = 12;
             // 
             // btnMudarCor
             // 
-            this.btnMudarCor.Location = new System.Drawing.Point(830, 236);
+            this.btnMudarCor.Location = new System.Drawing.Point(830, 369);
             this.btnMudarCor.Name = "btnMudarCor";
             this.btnMudarCor.Size = new System.Drawing.Size(145, 25);
             this.btnMudarCor.TabIndex = 15;
@@ -101,9 +100,9 @@
             // picChao
             // 
             this.picChao.Image = global::WindowsFormsAppBalao.Properties.Resources.Sem_título;
-            this.picChao.Location = new System.Drawing.Point(-10, 518);
+            this.picChao.Location = new System.Drawing.Point(0, 575);
             this.picChao.Name = "picChao";
-            this.picChao.Size = new System.Drawing.Size(1022, 71);
+            this.picChao.Size = new System.Drawing.Size(1018, 66);
             this.picChao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picChao.TabIndex = 5;
             this.picChao.TabStop = false;
@@ -111,9 +110,9 @@
             // picBalao
             // 
             this.picBalao.Image = global::WindowsFormsAppBalao.Properties.Resources.balao_vermelho;
-            this.picBalao.Location = new System.Drawing.Point(419, 418);
+            this.picBalao.Location = new System.Drawing.Point(429, 507);
             this.picBalao.Name = "picBalao";
-            this.picBalao.Size = new System.Drawing.Size(101, 105);
+            this.picBalao.Size = new System.Drawing.Size(101, 68);
             this.picBalao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBalao.TabIndex = 4;
             this.picBalao.TabStop = false;
@@ -121,7 +120,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::WindowsFormsAppBalao.Properties.Resources.vecteezy_blue_sky_cloud_bubble_pixel_design_for_decoration_wheather_36395813;
-            this.pictureBox4.Location = new System.Drawing.Point(790, 116);
+            this.pictureBox4.Location = new System.Drawing.Point(830, 88);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(65, 54);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -131,7 +130,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::WindowsFormsAppBalao.Properties.Resources.vecteezy_blue_sky_cloud_bubble_pixel_design_for_decoration_wheather_36395813;
-            this.pictureBox3.Location = new System.Drawing.Point(221, 75);
+            this.pictureBox3.Location = new System.Drawing.Point(139, 56);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(167, 77);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -151,7 +150,7 @@
             // btnDireita
             // 
             this.btnDireita.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDireita.Location = new System.Drawing.Point(830, 408);
+            this.btnDireita.Location = new System.Drawing.Point(861, 507);
             this.btnDireita.Name = "btnDireita";
             this.btnDireita.Size = new System.Drawing.Size(93, 29);
             this.btnDireita.TabIndex = 16;
@@ -162,7 +161,7 @@
             // btnEsquerda
             // 
             this.btnEsquerda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEsquerda.Location = new System.Drawing.Point(637, 406);
+            this.btnEsquerda.Location = new System.Drawing.Point(668, 505);
             this.btnEsquerda.Name = "btnEsquerda";
             this.btnEsquerda.Size = new System.Drawing.Size(101, 31);
             this.btnEsquerda.TabIndex = 17;
@@ -175,7 +174,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1008, 575);
+            this.ClientSize = new System.Drawing.Size(1008, 639);
             this.Controls.Add(this.btnEsquerda);
             this.Controls.Add(this.btnDireita);
             this.Controls.Add(this.btnMudarCor);
