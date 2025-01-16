@@ -6,7 +6,7 @@ namespace CronometroConsola
     {
         static void Main(string[] args)
         {
-            var relogio = new CronometroF();
+            var relogio = new CronometroF();            
             Console.WriteLine("Pressione Enter para iniciar o cronometro");
             Console.ReadLine();
 

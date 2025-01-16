@@ -100,7 +100,7 @@ namespace WindowsFormsAppPost
         public string Titulo
         {
             get { return _titulo; }
-            private set { _titulo = value; }
+            set { _titulo = value; }
         }
 
         /// <summary>
@@ -115,7 +115,7 @@ namespace WindowsFormsAppPost
         public string Descricao
         {
             get { return _descricao; }
-            private set { _descricao = value; }
+            set { _descricao = value; }
         }
 
         /// <summary>
@@ -154,7 +154,7 @@ namespace WindowsFormsAppPost
         public int Gostos
         {
             get { return _gostos; }
-            private set { _gostos = value; }
+            set { _gostos = value; }
         }
 
         /// <summary>
@@ -170,7 +170,7 @@ namespace WindowsFormsAppPost
         public int NaoGostos
         {
             get { return _naoGostos; }
-            private set { _naoGostos = value; }
+            set { _naoGostos = value; }
         }
 
         #endregion Properties
