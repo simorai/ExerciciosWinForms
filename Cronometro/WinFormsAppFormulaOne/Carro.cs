@@ -29,10 +29,10 @@ namespace WinFormsAppFormulaOne
         /// Ao criar uma nova instância, o depósito é inicializado como cheio, a quilometragem total é zero,
         /// e o contador de viagens é iniciado em zero.
         /// </remarks>
-        public Carro(string matricula/*, double capacidadeDeposito*/, double consumoMedio)
+        public Carro(string matricula, double consumoMedio)
         {
             _matricula = matricula;
-            _capacidadeDeposito = 50; /*capacidadeDeposito;*/
+            _capacidadeDeposito = 50; 
             _litrosNoDeposito = _capacidadeDeposito; // Inicialmente o depósito está cheio
             _consumoMedio = consumoMedio;
             _quilometragemTotal = 0;

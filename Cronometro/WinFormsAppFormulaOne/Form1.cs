@@ -33,7 +33,7 @@ namespace WinFormsAppFormulaOne
         public Form1()
         {
             InitializeComponent();            
-            carro = new Carro("49-81-PC"/*, 50*/, 6);            
+            carro = new Carro("49-81-PC", 6);            
             AtualizarDadosVeiculo();
             AtualizarInfoDetalhada();
         }
